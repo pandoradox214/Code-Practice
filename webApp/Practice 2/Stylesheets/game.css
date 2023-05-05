@@ -1,0 +1,46 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+.parent > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+#rockButton{
+    width: 125px;
+    height: 30px;
+    background-color: #b7f5b9;
+    border: none;
+    transition: opacity 125ms, color 125ms;
+}
+#rockButton:hover{
+    opacity: 0.8;
+    color: white;
+}
+#paperButton{
+    width: 125px;
+    height: 30px;
+    background-color: #f5beb7;
+    border: none;
+    transition: opacity 125ms color 125ms;
+}
+#paperButton:hover{
+    opacity: 0.8;
+    color: white;
+}
+#scissorsButton{
+    width: 125px;
+    height: 30px;
+    background-color: #b7c8f5;
+    border: none;
+    transition: opacity 125ms, color 125ms;
+}
+#scissorsButton:hover{
+    opacity: 0.8;
+    color: white;
+}
