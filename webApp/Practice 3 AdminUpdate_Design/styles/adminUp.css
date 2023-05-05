@@ -1,0 +1,98 @@
+.og{
+    background-color: #FFFF;
+}
+.Padmin{
+    display: flex;
+    column-count: 2;
+    height: auto;
+}
+#SidePanel{
+    background-color: #D9D9D9;
+    width: 275px;
+    height: 100vh;
+}
+#MainPanel{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFF;
+}
+.click a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+    height: 50px;
+    width: 200px;
+    background-color: #bbb9b9;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: opacity 150ms; 
+    text-decoration: none; 
+    color: black;
+}
+.click:hover{
+    opacity: 0.7;
+}
+.click:active{
+    opacity: 0.4;
+}
+.EditContainer{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0px;
+    height: 240px;
+}
+.displayMainPanel{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    row-gap: 20px;
+
+}
+.displayMainPanelSubClass{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    column-gap: 20px; ;
+
+}
+.averageSalesDisplay{
+    width: 820px;
+    height: 400px;
+    background-color: #D9D9D9;
+}
+.calendarDisplay, .emailsDisplay{
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 200px;
+}
+p .averageSalesDisplay {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+p .calendarDisplay, p .emailsDisplay {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .displayMainPanelSubClass {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    .averageSalesDisplay{
+        width: 200px;
+        height: 100px;
+    }
+    .calendarDisplay, .emailsDisplay{
+        width: 200px;
+        height: 100px;
+    }
+  }
