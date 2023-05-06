@@ -1,56 +1,21 @@
-function clickRock(){
+function clickaChoice(choice){
     const combinations = {
         Rock: 1/3,
         Paper: 2/3,
         Scissors: 3/3
     }
-    const humanChoice = combinations.Rock;
-    const ComputerChoice = Math.random();
-    if (ComputerChoice < combinations.Rock){
-        computerCalculatedChoice = combinations.Rock;
-        console.log("Computer chose rock");
+    var humanChoice;
+    switch(choice){
+        case "rock":
+            humanChoice = combinations.Rock;
+        break;
+        case "paper":
+            humanChoice = combinations.Paper;
+        break;
+        case "scissors":
+            humanChoice = combinations.Scissors;
+        break;
     }
-    else if (ComputerChoice < combinations.Paper && ComputerChoice >= combinations.Rock){
-        computerCalculatedChoice = combinations.Paper;
-        console.log("Computer chose paper");
-    }
-    else if(ComputerChoice >= combinations.Paper){
-        computerCalculatedChoice = combinations.Scissors;
-        console.log("Computer chose scissors");
-    }
-    winState(humanChoice, computerCalculatedChoice);
-}
-
-function clickPaper(){
-    const combinations = {
-        Rock: 1/3,
-        Paper: 2/3,
-        Scissors: 3/3
-    }
-    const humanChoice = combinations.Paper;
-    const ComputerChoice = Math.random();
-    if (ComputerChoice < combinations.Rock){
-        computerCalculatedChoice = combinations.Rock;
-        console.log("Computer chose rock");
-    }
-    else if (ComputerChoice < combinations.Paper && ComputerChoice >= combinations.Rock){
-        computerCalculatedChoice = combinations.Paper;
-        console.log("Computer chose paper");
-    }
-    else if(ComputerChoice >= combinations.Paper){
-        computerCalculatedChoice = combinations.Scissors;
-        console.log("Computer chose scissors");
-    }
-    winState(humanChoice, computerCalculatedChoice);
-}
-
-function clickScissors(){
-    const combinations = {
-        Rock: 1/3,
-        Paper: 2/3,
-        Scissors: 3/3
-    }
-    const humanChoice = combinations.Scissors;
     const ComputerChoice = Math.random();
     if (ComputerChoice < combinations.Rock){
         computerCalculatedChoice = combinations.Rock;
