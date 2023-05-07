@@ -4,7 +4,18 @@ function clickaChoice(choice){
         Paper: 2/3,
         Scissors: 3/3
     };
-    const humanChoice = combinations.Rock;
+    switch(choice){
+        case 'rock':
+            choice = combinations.Rock;
+            break;
+        case 'paper':
+            choice = combinations.Paper;
+            break;
+        case 'scissors':
+            choice = combinations.Scissors;
+            break;
+    };
+    const humanChoice = choice;
     const ComputerChoice = Math.random();
     if (ComputerChoice < combinations.Rock){
         computerCalculatedChoice = combinations.Rock;

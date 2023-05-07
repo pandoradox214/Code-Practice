@@ -53,7 +53,108 @@
     justify-content: center;
     background-color:  #D9D9D9;
 }
+.UpdatesButtonDiv{
+    width: 135px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.displayMainPanel > .UpdatesButtonDiv > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.displayMainPanel > .UpdatesButtonDiv > div > img{
+    width: 50px;
+    height: 100px;
+    
+}
+.displayMainPanel > .UpdatesButtonDiv{
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 115px;
+}
+.displayMainPanel{
+    display: flex;
+    justify-content: flex-end;
+}
 
+
+/* .displayMainPanel {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    position: relative; 
+  }
+  
+  .UpdatesButtonDiv {
+    width: 135px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    top: 50%;
+    right: 0; 
+    transform: translateY(-50%); 
+  }
+  
+  .UpdatesButtonDiv > div {
+    margin-bottom: 20px;
+  }
+  
+  .UpdatesButtonDiv > div > img {
+    width: 50px;
+    height: 100px;
+  }
+  
+  .AddButton > img {
+    background-image: url("img/svg/add_button.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .EditButton > img {
+    background-image: url("img/svg/edit Icon.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  .DeleteButton > img {
+    background-image: url("img/svg/trash.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+  }
+  
+ */
+
+
+
+
+
+
+/* .AddButton{
+    position: fixed;
+}
+.EditButton{
+    position: fixed;
+}
+.DeleteButton{
+    position: fixed;
+} */
 
 @media screen and (max-width: 1100px) {
     .displayMainPanelSubClass {
